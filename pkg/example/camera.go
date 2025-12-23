@@ -23,7 +23,7 @@ func NewCustomCamera(isFlat bool) *CustomCamera {
 		camera.Fovy = 45.0
 		camera.Projection = rl.CameraOrthographic
 		camera.Position = rl.NewVector3(0, 1, 0)
-		distance = 0.1
+		distance = 0.01
 	} else {
 		camera.Fovy = 45.0
 		camera.Projection = rl.CameraPerspective

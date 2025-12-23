@@ -9,18 +9,14 @@ type Circle struct {
 	obj *physics.Object
 }
 
-func NewCircle() *Circle {
+func NewCircle(e *physics.Engine) *Circle {
 	return &Circle{
-		obj: &physics.Object{
-			Pos:      rl.NewVector3(0, 0, 0),
-			Velocity: rl.NewVector3(0, 0, 0),
-			Radius:   1.0,
-		},
+		obj: e.GetObject(),
 	}
 }
 
 func (p *Circle) Update() {
-	p.obj.Update()
+	// p.obj.Update()
 }
 
 func (p *Circle) Draw() {
