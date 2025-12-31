@@ -51,7 +51,7 @@ func (e *Engine) GetObject() *Object {
 	newObj := &Object{
 		Pos:      rl.NewVector3(0, 0, 0),
 		Velocity: rl.NewVector3(0, 0, 0),
-		Radius:   1.0,
+		Radius:   0.1,
 	}
 	e.objects = append(e.objects, newObj)
 	return newObj

@@ -36,7 +36,7 @@ func NewCustomCamera(isFlat bool) *CustomCamera {
 		target:   rl.Vector3{},
 		distance: distance,
 		rotation: 0,
-		height:   4,
+		height:   10,
 	}
 }
 

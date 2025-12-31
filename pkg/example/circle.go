@@ -27,6 +27,10 @@ func (p *Circle) GetPos() rl.Vector3 {
 	return p.obj.Pos
 }
 
+func (p *Circle) GetRadius() float32 {
+	return p.obj.Radius
+}
+
 func (p *Circle) Move(move rl.Vector3) {
 	p.obj.Move(move)
 }
